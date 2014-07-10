@@ -12,4 +12,4 @@ class PostJobListingCommand {
 		$this->title       = $title;
 	}
 
-} 
+}
