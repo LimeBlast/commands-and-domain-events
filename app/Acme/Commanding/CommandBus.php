@@ -24,4 +24,4 @@ class CommandBus {
 		return $this->app->make($handler)->handle($command);
 	}
 
-} 
+}
