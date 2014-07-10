@@ -15,6 +15,11 @@ class JobsController extends BaseController {
 		$this->commandBus = $commandBus;
 	}
 
+	public function create()
+	{
+		return View::make('jobs.create');
+	}
+
 	/**
 	 * Store a new job
 	 *
