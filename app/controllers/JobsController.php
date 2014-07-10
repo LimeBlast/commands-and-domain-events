@@ -41,4 +41,4 @@ class JobsController extends BaseController {
 		$this->commandBus->execute($command);
 	}
 
-} 
+}

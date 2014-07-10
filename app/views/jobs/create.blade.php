@@ -11,7 +11,7 @@
 		{{ Former::textarea('description') }}
 	</fieldset>
 
-	{{ Former::actions()->primary_submit('Sign Up')->inverse_reset('Reset') }}
+	{{ Former::actions()->primary_submit('Submit')->inverse_reset('Reset') }}
 
 	{{Former::close()}}
 @stop

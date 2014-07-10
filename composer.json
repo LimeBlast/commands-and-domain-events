@@ -8,7 +8,8 @@
 		"way/generators": "2.6.1",
 		"barryvdh/laravel-ide-helper": "1.*",
 		"doctrine/dbal": "~2.3",
-        "anahkiasen/former": "dev-master"
+        "anahkiasen/former": "dev-master",
+		"codeception/codeception": "2.0.*"
 	},
 	"autoload": {
 		"classmap": [

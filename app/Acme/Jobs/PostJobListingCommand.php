@@ -6,10 +6,10 @@ class PostJobListingCommand {
 
 	public $description;
 
-	function __construct($description, $title)
+	function __construct($title, $description)
 	{
-		$this->description = $description;
 		$this->title       = $title;
+		$this->description = $description;
 	}
 
 }
