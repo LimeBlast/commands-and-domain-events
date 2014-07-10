@@ -3,6 +3,20 @@
 use Acme\Eventing\EventGenerator;
 use Acme\Jobs\JobWasPosted;
 
+/**
+ * Job
+ *
+ * @property integer        $id
+ * @property string         $title
+ * @property string         $description
+ * @property \Carbon\Carbon $created_at
+ * @property \Carbon\Carbon $updated_at
+ * @method static \Illuminate\Database\Query\Builder|\Job whereId($value)
+ * @method static \Illuminate\Database\Query\Builder|\Job whereTitle($value)
+ * @method static \Illuminate\Database\Query\Builder|\Job whereDescription($value)
+ * @method static \Illuminate\Database\Query\Builder|\Job whereCreatedAt($value)
+ * @method static \Illuminate\Database\Query\Builder|\Job whereUpdatedAt($value)
+ */
 class Job extends Eloquent {
 
 	use EventGenerator;
