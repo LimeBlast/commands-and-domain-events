@@ -1,9 +1,6 @@
 <?php
 
-Event::listen('Acme.Jobs.JobWasPosted', 'Acme\Listeners\EmailNotifier@whenJobWasPosted');
-
-Route::get('/', function()
-{
+Route::get('/', function () {
 	return View::make('hello');
 });
 
