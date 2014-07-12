@@ -6,9 +6,9 @@ use Job;
 
 class PostJobListingCommandHandler implements CommandHandler {
 
-	private $job;
+	protected $job;
 
-	private $eventDispatcher;
+	protected $eventDispatcher;
 
 	function __construct(Job $job, EventDispatcher $eventDispatcher)
 	{

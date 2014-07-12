@@ -8,11 +8,11 @@ class EventDispatcher {
 	/**
 	 * @var \Illuminate\Events\Dispatcher
 	 */
-	private $event;
+	protected $event;
 	/**
 	 * @var \Illuminate\Log\Writer
 	 */
-	private $log;
+	protected $log;
 
 	function __construct(Dispatcher $event, Writer $log)
 	{

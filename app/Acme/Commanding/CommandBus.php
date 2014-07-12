@@ -4,11 +4,11 @@ use Illuminate\Foundation\Application;
 
 class CommandBus {
 
-	private $app;
+	protected $app;
 	/**
 	 * @var CommandTranslator
 	 */
-	private $commandTranslator;
+	protected $commandTranslator;
 
 	function __construct(Application $app, CommandTranslator $commandTranslator)
 	{
