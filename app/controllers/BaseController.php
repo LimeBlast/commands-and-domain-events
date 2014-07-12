@@ -1,15 +1,15 @@
 <?php
 
-use Acme\Commanding\CommandBus;
+use Acme\Commanding\ValidationCommandBus;
 
 class BaseController extends Controller {
 
 	/**
-	 * @var Acme\Commanding\CommandBus
+	 * @var Acme\Commanding\ValidationCommandBus
 	 */
 	protected $commandBus;
 
-	function __construct(CommandBus $commandBus)
+	function __construct(ValidationCommandBus $commandBus)
 	{
 		$this->commandBus = $commandBus;
 	}

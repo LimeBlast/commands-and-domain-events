@@ -17,4 +17,9 @@ class CommandTranslator {
 		return $handler;
 	}
 
+	public function toValidator($command)
+	{
+		return str_replace('Command', 'Validator', get_class($command));
+	}
+
 }
