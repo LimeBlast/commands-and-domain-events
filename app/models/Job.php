@@ -1,6 +1,7 @@
 <?php
 
 use Acme\Eventing\EventGenerator;
+use Acme\Jobs\JobWasArchived;
 use Acme\Jobs\JobWasPosted;
 
 /**
@@ -31,6 +32,13 @@ class Job extends Eloquent {
 		$this->raise(new JobWasPosted($this));
 
 		return $this;
+	}
+
+	public function archive()
+	{
+		$this->delete();
+
+		$this->raise(new JobWasArchived($this));
 	}
 
 }

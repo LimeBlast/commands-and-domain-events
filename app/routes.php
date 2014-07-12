@@ -6,3 +6,4 @@ Route::get('/', function () {
 
 Route::get('/jobs/create', 'JobsController@create');
 Route::post('/jobs', 'JobsController@store');
+Route::get('/jobs/delete/{id}', 'JobsController@delete');
