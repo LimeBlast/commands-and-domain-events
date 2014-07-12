@@ -3,7 +3,7 @@
 use Acme\Eventing\EventListener;
 use Acme\Jobs\JobWasPosted;
 
-class EmailNotifier extends EventListener {
+class EmailListener extends EventListener {
 
 	public function whenJobWasPosted(JobWasPosted $event)
 	{

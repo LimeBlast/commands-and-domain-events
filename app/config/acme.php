@@ -3,7 +3,7 @@
 return [
 
 	'listeners' => [
-		'Acme\Listeners\EmailNotifier',
+		'Acme\Listeners\EmailListener',
 //		'Acme\Listeners\ReportListener'
 	]
 
